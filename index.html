@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TECMED Toxicológico</title>
+  <style>
+    body { margin:0; font-family:Arial,sans-serif; color:#123d60; }
+    header { background:#07558b; color:white; padding:24px; text-align:center; }
+    main { padding:40px 20px; text-align:center; min-height:50vh; }
+    .whatsapp { position:fixed; right:20px; bottom:20px; background:#25d366; color:white; width:65px; height:65px; border-radius:50%; display:grid; place-items:center; font-size:32px; text-decoration:none; box-shadow:0 4px 12px #0004; z-index:100; }
+    .cookies { position:fixed; bottom:0; left:0; right:0; background:white; padding:18px 90px 18px 18px; box-shadow:0 -3px 15px #0003; z-index:200; }
+    button { padding:12px; margin:5px; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <header><h1>TECMED TOXICOLÓGICO</h1></header>
+  <main>
+    <h2>Mantenha sua CNH em dia</h2>
+    <p>Exame toxicológico em São Gonçalo - RJ</p>
+    <p>Rua Francisco Portela, 2490, Loja 102, Camarão.</p>
+  </main>
+
+  <a class="whatsapp" href="https://wa.me/5521975316021" target="_blank" aria-label="WhatsApp TECMED">☎</a>
+
+  <div class="cookies" id="cookies">
+    <strong>Privacidade e cookies</strong>
+    <p>Utilizamos armazenamento essencial para suas preferências. Cookies de análise só serão ativados com sua autorização.</p>
+    <button onclick="consentir(true)">Aceitar opcionais</button>
+    <button onclick="consentir(false)">Rejeitar opcionais</button>
+  </div>
+
+  <script>
+    function consentir(aceito) {
+      localStorage.setItem('tecmed-cookies', aceito ? 'aceito' : 'rejeitado');
+      document.getElementById('cookies').hidden = true;
+    }
+    if (localStorage.getItem('tecmed-cookies') !== null) {
+      document.getElementById('cookies').hidden = true;
+    }
+  </script>
+</body>
+</html>
