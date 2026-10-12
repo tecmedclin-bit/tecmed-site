@@ -1,44 +1,17 @@
-
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TECMED Toxicológico</title>
-  <style>
-    body { margin:0; font-family:Arial,sans-serif; color:#123d60; }
-    header { background:#07558b; color:white; padding:24px; text-align:center; }
-    main { padding:40px 20px; text-align:center; min-height:50vh; }
-    .whatsapp { position:fixed; right:20px; bottom:20px; background:#25d366; color:white; width:65px; height:65px; border-radius:50%; display:grid; place-items:center; font-size:32px; text-decoration:none; box-shadow:0 4px 12px #0004; z-index:100; }
-    .cookies { position:fixed; bottom:0; left:0; right:0; background:white; padding:18px 90px 18px 18px; box-shadow:0 -3px 15px #0003; z-index:200; }
-    button { padding:12px; margin:5px; cursor:pointer; }
-  </style>
-</head>
-<body>
-  <header><h1>TECMED TOXICOLÓGICO</h1></header>
-  <main>
-    <h2>Mantenha sua CNH em dia</h2>
-    <p>Exame toxicológico em São Gonçalo - RJ</p>
-    <p>Rua Francisco Portela, 2490, Loja 102, Camarão.</p>
-  </main>
-
-  <a class="whatsapp" href="https://wa.me/5521975316021" target="_blank" aria-label="WhatsApp TECMED">☎</a>
-
-  <div class="cookies" id="cookies">
-    <strong>Privacidade e cookies</strong>
-    <p>Utilizamos armazenamento essencial para suas preferências. Cookies de análise só serão ativados com sua autorização.</p>
-    <button onclick="consentir(true)">Aceitar opcionais</button>
-    <button onclick="consentir(false)">Rejeitar opcionais</button>
-  </div>
-
-  <script>
-    function consentir(aceito) {
-      localStorage.setItem('tecmed-cookies', aceito ? 'aceito' : 'rejeitado');
-      document.getElementById('cookies').hidden = true;
-    }
-    if (localStorage.getItem('tecmed-cookies') !== null) {
-      document.getElementById('cookies').hidden = true;
-    }
-  </script>
-</body>
-</html>
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="TECMED Toxicológico: exame toxicológico em São Gonçalo, RJ. Atendimento a motoristas e empresas."><title>TECMED Toxicológico | São Gonçalo RJ</title><style>
+:root{--azul:#123d66;--verde:#198b79;--claro:#edf7fa}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#18334f;line-height:1.6;background:white}header{background:#fff;box-shadow:0 2px 12px #102e4a15;position:relative;z-index:1}.top{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:15px 22px}.marca{font-size:28px;font-weight:900;letter-spacing:-1px;color:var(--azul);line-height:1}.marca span{color:var(--verde)}.marca small{display:block;font-size:10px;letter-spacing:4px;margin-top:7px;color:#496176}nav a{margin-left:18px;text-decoration:none;color:var(--azul);font-weight:600}.hero{background:linear-gradient(110deg,#103e69ec,#12688ec9),radial-gradient(circle at 85% 30%,#70c9d1,transparent 40%);color:white;padding:92px 22px;text-align:center}.hero h1{font-size:clamp(32px,5vw,56px);margin:0 auto 15px;max-width:780px;line-height:1.15}.hero p{font-size:19px;max-width:740px;margin:0 auto 28px}.btn{display:inline-block;background:var(--verde);color:white;text-decoration:none;padding:15px 30px;border-radius:9px;font-weight:bold;box-shadow:0 6px 20px #0002}.wrap{max-width:1100px;margin:auto;padding:65px 22px}h2{text-align:center;font-size:clamp(26px,4vw,35px);color:var(--azul);margin:0 0 30px}.sub{text-align:center;margin:-12px auto 30px;max-width:680px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{padding:26px;border:1px solid #dceaf0;border-radius:15px;background:white;box-shadow:0 8px 24px #16395b0c}.card h3{margin:0 0 12px;color:var(--azul)}.light{background:var(--claro)}.price{text-align:center;background:linear-gradient(130deg,#e7f6f8,#f8fcff);border-radius:18px;padding:35px 20px}.price strong{font-size:52px;color:var(--azul);display:block}.price small{display:block}.locations{text-align:center}.pin{font-size:33px;color:var(--verde)}.info{background:#173b60;color:white}.info h2{color:white}.info p{max-width:850px;margin:14px auto}.two{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.bus{border-radius:16px;background:linear-gradient(145deg,#dae8f1,#8caec5);min-height:240px;display:grid;place-items:center;color:var(--azul);font-size:72px}.contact a{color:var(--verde);font-weight:bold}.footer{background:linear-gradient(120deg,#102f58,#155a94);color:white;padding:45px 22px}.footer .two{max-width:1100px;margin:auto;align-items:start}.footer a{color:white}.wa{position:fixed;right:20px;bottom:20px;width:62px;height:62px;background:#25d366;border-radius:50%;display:grid;place-items:center;box-shadow:0 5px 18px #0004;z-index:30;text-decoration:none;color:white}.wa svg{width:37px;height:37px;fill:currentColor}.cookies{position:fixed;bottom:0;left:0;right:0;z-index:40;background:white;box-shadow:0 -5px 24px #0002;padding:18px 22px;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;color:#1d3650}.cookies p{max-width:720px;margin:0;font-size:14px}.cookies button{border:0;border-radius:7px;padding:11px 15px;cursor:pointer;font-weight:bold}.accept{background:var(--verde);color:white}.reject{background:#e7edf2;color:#153653}.hidden{display:none!important}@media(max-width:750px){.top{display:block;text-align:center}nav{margin-top:15px}nav a{display:inline-block;margin:5px 8px}.cards,.two{grid-template-columns:1fr}.hero{padding:70px 20px}.wrap{padding:48px 20px}.price strong{font-size:43px}.cookies{padding-bottom:88px}.wa{bottom:17px}}
+</style></head><body>
+<header><div class="top"><div class="marca">TEC<span>MED</span><small>TOXICOLÓGICO</small></div><nav><a href="#servicos">Serviços</a><a href="#unidades">Unidades</a><a href="#contato">Contato</a></nav></div></header>
+<section class="hero"><h1>Mantenha sua CNH em dia</h1><p>Exame toxicológico em São Gonçalo – RJ. Atendimento ágil para motoristas e empresas.</p><a class="btn" href="https://wa.me/5521975316021?text=Ol%C3%A1%2C%20quero%20agendar%20meu%20exame%20toxicol%C3%B3gico" target="_blank" rel="noopener noreferrer">AGENDAR PELO WHATSAPP</a></section>
+<section class="wrap" id="servicos"><h2>Exame toxicológico com praticidade</h2><p class="sub">Resultados on-line com envio eletrônico ao DETRAN, conforme aplicável. Prazo estimado de liberação: 5 a 7 dias úteis.</p><div class="cards"><div class="card"><h3>Para motoristas</h3><p>Atendimento para exames toxicológicos relacionados à habilitação e às exigências legais aplicáveis.</p></div><div class="card"><h3>Para empresas</h3><p>Condições para empresas de transporte e demandas ocupacionais.</p></div><div class="card"><h3>Atendimento pelo WhatsApp</h3><p>Esclareça dúvidas e solicite seu agendamento diretamente com nossa equipe.</p></div></div></section>
+<section class="light"><div class="wrap"><div class="price"><h2>Oferta especial do site</h2><strong>R$ 109,99</strong><small>À vista. Confirme condições e disponibilidade no atendimento.</small></div></div></section>
+<section class="wrap locations" id="unidades"><h2>Nossas unidades</h2><div class="cards"><div class="card"><div class="pin">⌖</div><h3>São Gonçalo</h3><p>Rua Dr. Francisco Portela, 2490, Loja 102, Camarão – São Gonçalo/RJ.</p></div><div class="card"><div class="pin">⌖</div><h3>Itaboraí</h3><p>Consulte o endereço e o atendimento pelo WhatsApp.</p></div><div class="card"><div class="pin">⌖</div><h3>Maricá</h3><p>Consulte o endereço e o atendimento pelo WhatsApp.</p></div></div></section>
+<section class="info"><div class="wrap"><h2>Atendimento especializado</h2><p>A TECMED Toxicológico atende motoristas e empresas que precisam realizar exames toxicológicos. Entre em contato com nossa equipe para verificar as exigências para o seu caso.</p><p style="text-align:center"><strong>LIGUE AGORA: (21) 97531-6021</strong></p></div></section>
+<section class="wrap"><div class="two"><div class="bus" aria-label="Transporte rodoviário">🚌</div><div><h2 style="text-align:left">Condições para empresas</h2><p>Descontos para empresas de transporte, conforme volume e condições comerciais. Consulte nossa equipe.</p><a class="btn" href="https://wa.me/5521975316021" target="_blank" rel="noopener noreferrer">CONSULTAR CONDIÇÕES</a></div></div></section>
+<section class="light" id="contato"><div class="wrap contact"><h2>Localização e contato</h2><div class="two"><div><h3>TECMED Toxicológico – São Gonçalo</h3><p>Rua Dr. Francisco Portela, 2490, Loja 102, Camarão – São Gonçalo/RJ</p><p>Telefone e WhatsApp: <a href="tel:+5521975316021">(21) 97531-6021</a></p><p><a href="https://www.google.com/maps/search/?api=1&query=Rua+Dr+Francisco+Portela+2490+Sao+Goncalo+RJ" target="_blank" rel="noopener noreferrer">Ver endereço no Google Maps ↗</a></p></div><div class="card"><h3>Agende seu exame</h3><p>Fale diretamente com nossa equipe e tire suas dúvidas.</p><a class="btn" href="https://wa.me/5521975316021" target="_blank" rel="noopener noreferrer">FALAR NO WHATSAPP</a></div></div></div></section>
+<footer class="footer"><div class="two"><div><h3>TECMED TOXICOLÓGICO</h3><p>Exame toxicológico em São Gonçalo</p><p>WhatsApp: (21) 97531-6021</p><p>Rua Dr. Francisco Portela, 2490, Loja 102 – Camarão – São Gonçalo/RJ</p><p>www.tecmedtoxicologico.com.br</p></div><div><p>E-mail: <a href="mailto:tecmedclin@gmail.com">tecmedclin@gmail.com</a></p><p>CNPJ: 60.688.423/0001-78</p><p>TECMED CLÍNICA MÉDICA</p><p>Instagram: <a href="https://www.instagram.com/tecmed.ofc/" target="_blank" rel="noopener noreferrer">@tecmed.ofc</a></p><p>Formas de pagamento: PIX, crédito e débito.</p></div></div></footer>
+<a class="wa" href="https://wa.me/5521975316021?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20exame%20toxicol%C3%B3gico" target="_blank" rel="noopener noreferrer" aria-label="Conversar com a TECMED pelo WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 .8A15.2 15.2 0 0 0 2.9 23.7L.8 31l7.5-2A15.2 15.2 0 1 0 16 .8Zm0 27.7c-2.3 0-4.5-.6-6.5-1.8l-.5-.3-4.4 1.2 1.2-4.3-.3-.5a12.4 12.4 0 1 1 10.5 5.7Zm6.8-9.3c-.4-.2-2.2-1.1-2.6-1.2-.3-.1-.6-.2-.8.2-.2.4-1 1.2-1.2 1.4-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.3-2.1-2.7-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.6.1-.3 0-.5 0-.7l-1.2-2.8c-.3-.7-.6-.6-.8-.6h-.7c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.5 1.5 3.7c.2.2 2.6 4 6.3 5.6.9.4 1.6.6 2.2.7.9.3 1.7.2 2.4.2.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.7.2-1.8-.1-.2-.3-.3-.7-.5Z"/></svg></a>
+<div class="cookies" id="cookieBanner" role="dialog" aria-label="Preferências de cookies"><p><strong>Privacidade e cookies.</strong> Utilizamos armazenamento essencial para suas preferências. Cookies opcionais de análise só serão ativados com sua autorização.</p><div><button class="accept" type="button" id="acceptCookies">Aceitar opcionais</button> <button class="reject" type="button" id="rejectCookies">Rejeitar opcionais</button></div></div>
+<script>/* Nenhum serviço de análise opcional é carregado nesta versão. */(function(){var banner=document.getElementById('cookieBanner');try{if(localStorage.getItem('tecmed-cookie-choice'))banner.classList.add('hidden')}catch(e){}function choose(choice){try{localStorage.setItem('tecmed-cookie-choice',choice)}catch(e){}banner.classList.add('hidden')}document.getElementById('acceptCookies').addEventListener('click',function(){choose('accepted')});document.getElementById('rejectCookies').addEventListener('click',function(){choose('rejected')})})();</script>
+</body></html>
