@@ -209,3 +209,7 @@ body:has(.cookie:not([hidden])) .floating{bottom:100px}
 #i4028n{width:100%;margin-left:auto;margin-right:auto;max-width:auto;height:400px;overflow:hidden}
 .navbar-menu-toggle{cursor:pointer}
 @media(max-width:768px){.navbar-items-c.menu-open{display:block!important}}
+/* TECMED: banner Outubro Rosa em largura total */
+#iin6xk{width:100%;max-width:none;margin:0;padding:0;display:block;}
+#iin6xk #i4028n{width:100%;max-width:none;margin:0;height:400px;overflow:hidden;}
+#iin6xk #il5eag{display:block;width:100%;max-width:none;height:auto;}
