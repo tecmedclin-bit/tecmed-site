@@ -7,10 +7,14 @@
             <br/>www.tecmedtoxicologico.com.br
           </p></div><div id="ibe1b5"><p id="iyhhgk">Email: <a href="mailto:tecmedclin@gmail.com">tecmedclin@gmail.com</a></p><p id="irdab2"> CNPJ: 60.688.423/0001-78 <br/>TECMED CLÍNICA MÉDICA</p><p id="i98oda">Instagram: <a href="https://www.instagram.com/tecmed.ofc/" target="_blank" rel="noopener">@tecmed.ofc</a></p><p id="i3wr7k"><strong>FORMAS DE PAGAMENTO</strong><br/>PIX · CRÉDITO · DÉBITO
           </p></div></div></footer><a href="https://wa.me/5521975316021" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp" id="isapip" class="floating"><br/></a><script>
-      const banner = document.getElementById(&#x27;cookieBanner&#x27;);
-      if (!sessionStorage.getItem(&#x27;tecmed_cookie_ack&#x27;)) banner.hidden = false;
-      document.getElementById(&#x27;cookieClose&#x27;).addEventListener(&#x27;click&#x27;, () =&gt; {
-        sessionStorage.setItem(&#x27;tecmed_cookie_ack&#x27;, &#x27;1&#x27;);
-        banner.hidden = true
-      });
-    </script><div id="iy0m9w">Insert your text here</div><script>document.querySelectorAll('.navbar-menu-toggle').forEach(el=>el.addEventListener('click',()=>{const menu=el.parentElement.querySelector('.navbar-items-c');if(menu)menu.classList.toggle('menu-open')}));</script></body></html>
+(function () {
+  const banner = document.getElementById('cookieBanner');
+  const button = document.getElementById('cookieClose');
+  if (!banner || !button) return;
+  if (sessionStorage.getItem('tecmed_cookie_ack') === '1') banner.style.display = 'none';
+  button.addEventListener('click', function () {
+    sessionStorage.setItem('tecmed_cookie_ack', '1');
+    banner.style.display = 'none';
+  });
+})();
+</script><div id="iy0m9w">Insert your text here</div><script>document.querySelectorAll('.navbar-menu-toggle').forEach(el=>el.addEventListener('click',()=>{const menu=el.parentElement.querySelector('.navbar-items-c');if(menu)menu.classList.toggle('menu-open')}));</script></body></html>
