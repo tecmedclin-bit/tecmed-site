@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carrossel TECMED</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+
+  .carrossel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slide { display: none; width: 100%; }
+  .slide.ativo { display: block; }
+
+  .slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,.35);
+    color: white;
+    border: 0;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .anterior { left: 12px; }
+  .proximo { right: 12px; }
+</style>
+</head>
+<body>
+
+<div class="carrossel">
+  <div class="slide ativo">
+    <img src="toxi.png" alt="Exame Toxicológico TECMED">
+  </div>
+
+  <div class="slide">
+    <img src="rosa.png" alt="Outubro Rosa TECMED">
+  </div>
+
+  <button class="seta anterior" onclick="mudar(-1)" aria-label="Anterior">&#8249;</button>
+  <button class="seta proximo" onclick="mudar(1)" aria-label="Próximo">&#8250;</button>
+</div>
+
+<script>
+  let atual = 0;
+  const slides = document.querySelectorAll(".slide");
+
+  function mostrar(n) {
+    atual = (n + slides.length) % slides.length;
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("ativo", i === atual);
+    });
+  }
+
+  function mudar(direcao) {
+    mostrar(atual + direcao);
+  }
+
+  setInterval(() => mudar(1), 5000);
+</script>
+
+</body>
+</html>
