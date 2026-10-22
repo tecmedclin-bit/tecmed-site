@@ -213,3 +213,10 @@ body:has(.cookie:not([hidden])) .floating{bottom:100px}
 #iin6xk{width:100%;max-width:none;margin:0;padding:0;display:block;}
 #iin6xk #i4028n{width:100%;max-width:none;margin:0;height:400px;overflow:hidden;}
 #iin6xk #il5eag{display:block;width:100%;max-width:none;height:auto;}
+/* Banner Outubro Rosa - largura total */
+#iin6xk {
+  width: 100vw !important;
+  max-width: none !important;
+  margin-left: calc(50% - 50vw) !important;
+  padding: 0 !important;
+}
