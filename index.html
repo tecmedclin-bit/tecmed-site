@@ -296,11 +296,105 @@ img,video,iframe { max-width:100%; }
  #tm-controls a {width:32px;height:32px;font-size:24px;}
  #contato {padding:25px 16px 16px;}
 }
+
+/* Ajuste final: cada forma de pagamento ocupa uma coluna unica,
+   com o respectivo nome alinhado ao centro diretamente abaixo do icone. */
+#tm-pay-grid {
+  display:grid !important;
+  grid-template-columns:repeat(3, minmax(0, 88px)) !important;
+  gap:12px !important;
+  justify-content:start !important;
+  align-items:start !important;
+  max-width:300px !important;
+  margin-top:7px !important;
+}
+#tm-payment-debit, #tm-payment-credit, #tm-payment-pix {
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  min-width:0 !important;
+  width:100% !important;
+  min-height:67px !important;
+  padding:4px 0 !important;
+  margin:0 !important;
+  gap:6px !important;
+  box-sizing:border-box !important;
+  text-align:center !important;
+  background:transparent !important;
+  border:none !important;
+  border-radius:0 !important;
+}
+#tm-debit-icon, #tm-credit-icon {
+  display:block !important;
+  width:34px !important;
+  height:27px !important;
+  flex:0 0 27px !important;
+}
+#tm-debit-text, #tm-credit-text, #tm-payment-pix .pix-wordmark {
+  display:block !important;
+  width:100% !important;
+  margin:0 !important;
+  padding:0 !important;
+  font:600 12px/18px Arial,sans-serif !important;
+  text-align:center !important;
+  letter-spacing:0 !important;
+  color:#fff !important;
+}
+#tm-pix-official {
+  display:block;
+  height:27px !important;
+  width:34px !important;
+  max-width:100% !important;
+  flex:0 0 27px !important;
+  object-fit:contain !important;
+  filter:brightness(0) invert(1);
+}
+#tm-payment-pix .pix-wordmark {font-size:12px!important}
+@media (max-width:360px) {
+  #tm-pay-grid {grid-template-columns:repeat(3,minmax(0,1fr))!important; gap:6px!important; max-width:100%!important;}
+}
+
+
+/* Correcao do titulo FORMAS DE PAGAMENTO: alinhado exatamente
+   ao centro do conjunto de icones em qualquer tamanho de tela. */
+#tm-pay {
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+}
+#tm-pay-title {
+  display:block !important;
+  width:288px !important;
+  max-width:100% !important;
+  margin:0 0 12px !important;
+  padding:0 !important;
+  text-align:center !important;
+  box-sizing:border-box !important;
+  white-space:normal !important;
+}
+#tm-pay-grid {
+  width:288px !important;
+  max-width:100% !important;
+  margin:0 !important;
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  column-gap:12px !important;
+  justify-content:center !important;
+  box-sizing:border-box !important;
+}
+#tm-payment-debit,#tm-payment-credit,#tm-payment-pix {
+  justify-self:stretch !important;
+  align-self:start !important;
+}
+@media(max-width:360px){
+  #tm-pay-title,#tm-pay-grid {width:min(288px,100%) !important;}
+}
 </style></head><body><div id="i497"><header id="isbxx" title=""><div id="iattt9" class="navbar"><div id="inrmki" class="navbar-cnt"><a href="/" id="if4w1n" class="navbar-brand"><img src="https://cdn.grapesjs.com/workspaces/cmv4q2usbhk59ysyklsra9ceh/assets/ea1314e1-5170-482e-8e89-9c0c5bddc609__logo-tecmed-toxicolgico-em-azul-e-verde.png" id="iaeyaf" alt="" loading="lazy"></a><div id="in27px" class="navbar-menu-toggle"><span data-type-icon="True" id="ieg0qf" class="gjs-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg></span></div><div id="ieauyg" class="navbar-items-c"><div id="ib46kg" class="navbar-menu-nav"><a id="iuyldk" href="#unidades">UNIDADES</a><a id="icieq8" href="#localizacao">LOCALIZAÇÃO</a><a id="iadpze" href="#contato">CONTATO</a></div></div></div></div></header><section aria-label="Capa animada TECMED" id="ico25" class="hero"><video allowfullscreen="allowfullscreen" autoplay="True" muted="True" loop="True" playsinline="" preload="metadata" poster="" src="https://tecmedclin-bit.github.io/tecmed-site/1010%20NOVO.mp4" id="i3igy"><source src="https://tecmedclin-bit.github.io/tecmed-site/1010%20NOVO.mp4" type="video/mp4"></video></section><section id="exames" class="wrap"><p id="icqet" class="lead">
       </p><h3 id="invcn5"><span data-gs-mrk-fs="true" id="ivrmd8">RESULTADOS ONLINE COM ENVIO ELETRÔNICO AO DETRAN .</span></h3><p></p><h2 id="imhmt"><span data-gs-mrk-fs="true" id="i0umyc">5 A 7 DIAS ÚTEIS.</span></h2><p id="iit3c" class="muted"><span data-gs-mrk-fs="true" id="izlf8i">Prazo estimado de liberação do resultado.</span></p></section><section id="isj5v" class="light"><div id="i768f" class="wrap"><h2 id="it5iq"><span data-gs-mrk-fs="true" id="iya87e">OFERTA ESPECIAL DO SITE.</span></h2><div id="icdki" class="price"><span data-gs-mrk-fs="true" id="ic3uvf">R$ 109,99</span></div><p id="i0vu8" class="lead"><b><span data-gs-mrk-fs="true" id="iackrp">À VISTA</span></b></p></div></section><section id="tecmed-carousel"><div id="tecmed-carousel-track"><img id="tecmed-slide-a" src="rosa.png" alt="Campanha Outubro Rosa TECMED" loading="lazy"><img id="tecmed-slide-b" src="toxi.png" alt="Exame toxicológico TECMED" loading="lazy"></div><div id="tm-controls"><a id="tm-arrow-left" href="#tecmed-carousel" title="Ver Outubro Rosa" aria-label="Imagem anterior">‹</a><a id="tm-arrow-right" href="#tecmed-carousel" title="Ver Exame Toxicológico" aria-label="Próxima imagem">›</a></div></section><section id="unidades" class="wrap"><h2 id="iqolo">NOSSAS UNIDADES</h2><div id="ign43" class="grid"><div id="i0elg" class="unit"><span id="ion28" class="pin"><img alt="" src="https://cdn.grapesjs.com/workspaces/cmv4q2usbhk59ysyklsra9ceh/assets/c319bff0-e4d9-46a8-9d62-5c52a6080d9a__locationon256dp00a859fill0wght400grad0opsz48.png" id="iu2ah4" loading="lazy"></span>SÃO GONÇALO
         </div><div id="i9og6" class="unit"><span id="igm0l" class="pin"><img alt="" src="https://cdn.grapesjs.com/workspaces/cmv4q2usbhk59ysyklsra9ceh/assets/c319bff0-e4d9-46a8-9d62-5c52a6080d9a__locationon256dp00a859fill0wght400grad0opsz48.png" id="iyqa9v" loading="lazy"></span>ITABORAÍ
         </div><div id="iskbf" class="unit"><span id="isexh" class="pin"><img alt="" src="https://cdn.grapesjs.com/workspaces/cmv4q2usbhk59ysyklsra9ceh/assets/c319bff0-e4d9-46a8-9d62-5c52a6080d9a__locationon256dp00a859fill0wght400grad0opsz48.png" id="i4qf7d" loading="lazy"></span>MARICÁ
-        </div></div><p id="ikd09" class="muted"><br></p></section><div id="i5gyek"><div id="izzvgei"><br></div></div><section id="localizacao" class="light"><div id="iqv9cm" class="wrap"><h2 id="iy28g3">LOCALIZAÇÃO</h2><div id="i6aic" title="" class="two"><iframe frameborder="0" title="Mapa da TECMED São Gonçalo" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Rua%20Francisco%20Portela%202490%20Camar%C3%A3o%20S%C3%A3o%20Gon%C3%A7alo%20RJ&amp;output=embed" id="i4s1a2" class="map"></iframe></div></div></section><div id="cookieBanner" class="cookie"><span id="itg0km">Este site utiliza apenas recursos essenciais para seu funcionamento.</span><button type="button" id="cookieClose"><span>Entendi</span></button></div><footer id="contato"><div id="tm-footer-main"><div id="tm-brand"><h3 id="tm-brand-title">TECMED TOXICOLÓGICO</h3><p id="tm-brand-sub">Sua saúde e sua CNH em boas mãos.</p><p id="tm-address">Rua Francisco Portela, 2490, Loja 102</p><p id="tm-city">Camarão · São Gonçalo/RJ</p></div><div id="tm-contact"><h3 id="tm-contact-title">Informações</h3><p id="tm-results">Resultados em 5 a 7 dias úteis</p><a id="tm-insta" href="https://www.instagram.com/tecmed.ofc/" target="_blank">@tecmed.ofc</a></div><div id="tm-pay"><h3 id="tm-pay-title">Formas de pagamento</h3><div id="tm-pay-grid"><div id="tm-payment-debit"><svg id="tm-debit-icon" role="img" aria-label="Débito" xmlns="http://www.w3.org/2000/svg" width="34" height="26" viewBox="0 0 34 26"><rect x="1.5" y="2" width="31" height="22" rx="4.5" stroke="#fff" fill="none" stroke-width="2"/><path d="M2 9h30" stroke="#fff" stroke-width="2"/><rect x="7" y="16" width="9" height="2.5" rx="1" fill="#fff"/></svg><span id="tm-debit-text">Débito</span></div><div id="tm-payment-credit"><svg id="tm-credit-icon" role="img" aria-label="Crédito" xmlns="http://www.w3.org/2000/svg" width="34" height="26" viewBox="0 0 34 26"><rect x="1.5" y="2" width="31" height="22" rx="4.5" stroke="#fff" fill="none" stroke-width="2"/><path d="M2 9h30" stroke="#fff" stroke-width="2"/><path d="M21 18h7" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg><span id="tm-credit-text">Crédito</span></div><div id="tm-payment-pix"><img id="tm-pix-official" src="https://commons.wikimedia.org/wiki/Special:FilePath/Pix%20(Brazil)%20logo.svg" alt="Logomarca oficial Pix" loading="eager"><span class="pix-wordmark" aria-label="Pix">PIX</span></div></div></div></div><p id="tm-footer-copy">© 2026 TECMED Toxicológico · Todos os direitos reservados.</p></footer><a href="https://wa.me/5521975316021" target="_blank" rel="noopener" aria-label="Atendimento TECMED pelo WhatsApp" id="isapip" class="floating"><svg aria-hidden="true" width="27" height="27" viewBox="0 0 32 32"><path fill="white" d="M16 3C8.82 3 3 8.82 3 16a13 13 0 0 0 1.65 6.34L3 29l6.82-1.79A12.94 12.94 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3zm0 23.7a10.66 10.66 0 0 1-5.44-1.49l-.39-.23-4.05 1.06 1.08-3.95-.26-.41a10.63 10.63 0 1 1 9.06 5.02zm5.84-7.96c-.32-.16-1.9-.94-2.19-1.05-.3-.1-.51-.16-.73.16-.22.32-.84 1.05-1.02 1.26-.19.22-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.58-.95-.85-1.59-1.89-1.77-2.21-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.54.11-.21.05-.4-.03-.56-.08-.16-.73-1.76-1-2.4-.26-.63-.53-.55-.73-.56l-.63-.01c-.22 0-.58.08-.89.4-.3.32-1.16 1.13-1.16 2.75s1.19 3.19 1.35 3.4c.16.22 2.34 3.57 5.68 5.01.79.34 1.4.54 1.88.69.79.25 1.5.22 2.06.13.63-.09 1.9-.78 2.17-1.53.27-.75.27-1.39.19-1.53-.08-.14-.29-.22-.61-.38z"/></svg></a></div><script>
+        </div></div><p id="ikd09" class="muted"><br></p></section><div id="i5gyek"><div id="izzvgei"><br></div></div><section id="localizacao" class="light"><div id="iqv9cm" class="wrap"><h2 id="iy28g3">LOCALIZAÇÃO</h2><div id="i6aic" title="" class="two"><iframe frameborder="0" title="Mapa da TECMED São Gonçalo" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Rua%20Francisco%20Portela%202490%20Camar%C3%A3o%20S%C3%A3o%20Gon%C3%A7alo%20RJ&amp;output=embed" id="i4s1a2" class="map"></iframe></div></div></section><div id="cookieBanner" class="cookie"><span id="itg0km">Este site utiliza apenas recursos essenciais para seu funcionamento.</span><button type="button" id="cookieClose"><span>Entendi</span></button></div><footer id="contato"><div id="tm-footer-main"><div id="tm-brand"><h3 id="tm-brand-title">TECMED TOXICOLÓGICO</h3><p id="tm-brand-sub">Sua saúde e sua CNH em boas mãos.</p><p id="tm-address">Rua Francisco Portela, 2490, Loja 102</p><p id="tm-city">Camarão · São Gonçalo/RJ</p></div><div id="tm-contact"><h3 id="tm-contact-title">Informações</h3><p id="tm-results">Resultados em 5 a 7 dias úteis</p><a id="tm-insta" href="https://www.instagram.com/tecmed.ofc/" target="_blank">@tecmed.ofc</a></div><div id="tm-pay"><h3 id="tm-pay-title">Formas de pagamento</h3><div id="tm-pay-grid"><div id="tm-payment-debit"><svg id="tm-debit-icon" role="img" aria-label="Débito" xmlns="http://www.w3.org/2000/svg" width="34" height="26" viewBox="0 0 34 26"><rect x="1.5" y="2" width="31" height="22" rx="4.5" stroke="#fff" fill="none" stroke-width="2"/><path d="M2 9h30" stroke="#fff" stroke-width="2"/><rect x="7" y="16" width="9" height="2.5" rx="1" fill="#fff"/></svg><span id="tm-debit-text">Débito</span></div><div id="tm-payment-credit"><svg id="tm-credit-icon" role="img" aria-label="Crédito" xmlns="http://www.w3.org/2000/svg" width="34" height="26" viewBox="0 0 34 26"><rect x="1.5" y="2" width="31" height="22" rx="4.5" stroke="#fff" fill="none" stroke-width="2"/><path d="M2 9h30" stroke="#fff" stroke-width="2"/><path d="M21 18h7" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg><span id="tm-credit-text">Crédito</span></div><div id="tm-payment-pix"><svg id="tm-pix-official" role="img" aria-label="Símbolo Pix" xmlns="http://www.w3.org/2000/svg" width="34" height="27" viewBox="0 0 24 24"><path fill="#fff" d="M5.283 18.36a3.505 3.505 0 0 0 2.493-1.032l3.6-3.6a.684.684 0 0 1 .946 0l3.613 3.613a3.504 3.504 0 0 0 2.493 1.032h.71l-4.56 4.56a3.647 3.647 0 0 1-5.156 0L4.85 18.36ZM18.428 5.627a3.505 3.505 0 0 0-2.493 1.032l-3.613 3.614a.67.67 0 0 1-.946 0l-3.6-3.6A3.505 3.505 0 0 0 5.283 5.64h-.434l4.573-4.572a3.646 3.646 0 0 1 5.156 0l4.559 4.559ZM1.068 9.422 3.79 6.699h1.492a2.483 2.483 0 0 1 1.744.722l3.6 3.6a1.73 1.73 0 0 0 2.443 0l3.614-3.613a2.482 2.482 0 0 1 1.744-.723h1.767l2.737 2.737a3.646 3.646 0 0 1 0 5.156l-2.736 2.736h-1.768a2.482 2.482 0 0 1-1.744-.722l-3.613-3.613a1.77 1.77 0 0 0-2.444 0l-3.6 3.6a2.483 2.483 0 0 1-1.744.722H3.791l-2.723-2.723a3.646 3.646 0 0 1 0-5.156"/></svg><span class="pix-wordmark" aria-label="Pix">PIX</span></div></div></div></div><p id="tm-footer-copy">© 2026 TECMED Toxicológico · Todos os direitos reservados.</p></footer><a href="https://wa.me/5521975316021" target="_blank" rel="noopener" aria-label="Atendimento TECMED pelo WhatsApp" id="isapip" class="floating"><svg aria-hidden="true" width="27" height="27" viewBox="0 0 32 32"><path fill="white" d="M16 3C8.82 3 3 8.82 3 16a13 13 0 0 0 1.65 6.34L3 29l6.82-1.79A12.94 12.94 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3zm0 23.7a10.66 10.66 0 0 1-5.44-1.49l-.39-.23-4.05 1.06 1.08-3.95-.26-.41a10.63 10.63 0 1 1 9.06 5.02zm5.84-7.96c-.32-.16-1.9-.94-2.19-1.05-.3-.1-.51-.16-.73.16-.22.32-.84 1.05-1.02 1.26-.19.22-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.58-.95-.85-1.59-1.89-1.77-2.21-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.54.11-.21.05-.4-.03-.56-.08-.16-.73-1.76-1-2.4-.26-.63-.53-.55-.73-.56l-.63-.01c-.22 0-.58.08-.89.4-.3.32-1.16 1.13-1.16 2.75s1.19 3.19 1.35 3.4c.16.22 2.34 3.57 5.68 5.01.79.34 1.4.54 1.88.69.79.25 1.5.22 2.06.13.63-.09 1.9-.78 2.17-1.53.27-.75.27-1.39.19-1.53-.08-.14-.29-.22-.61-.38z"/></svg></a></div><script>
 document.addEventListener('DOMContentLoaded', function () {
   var cookie = document.getElementById('cookieBanner');
   var close = document.getElementById('cookieClose');
@@ -308,8 +402,6 @@ document.addEventListener('DOMContentLoaded', function () {
     try {cookie.hidden = sessionStorage.getItem('tecmed_cookie_ack') === '1';} catch(e) {cookie.hidden=false;}
     close.addEventListener('click',function(){cookie.hidden=true;try{sessionStorage.setItem('tecmed_cookie_ack','1')}catch(e){}});
   }
-  var pix=document.getElementById('tm-pix-official');
-  if(pix){var fallback=pix.nextElementSibling;function ok(){if(fallback)fallback.style.display='none';}function error(){pix.style.display='none';if(fallback)fallback.style.display='inline-block';}pix.addEventListener('load',ok);pix.addEventListener('error',error);if(pix.complete){if(pix.naturalWidth)ok();else error();}}
   var menu=document.querySelector('.navbar-menu-toggle');
   var links=document.querySelector('.navbar-items-c');
   if(menu && links){
